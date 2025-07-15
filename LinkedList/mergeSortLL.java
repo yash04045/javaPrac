@@ -102,7 +102,7 @@ public class mergeSortLL {
         ll.add(10);
         ll.add(1);
         ll.add(6);
-        ll.add(9);
+        // ll.add(9);
         printLL();
         ll.head=ll.mergeSort(ll.head);
         printLL();

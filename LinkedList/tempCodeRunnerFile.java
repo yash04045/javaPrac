@@ -1,2 +1,2 @@
-ll.removeLast();
-        // ll.removeFirst();
+ll.mergeSort(ll.head);
+        // printLL();
