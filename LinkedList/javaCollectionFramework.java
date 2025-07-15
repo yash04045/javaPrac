@@ -9,6 +9,7 @@ public class javaCollectionFramework {
         ll.addLast(2);
         ll.addLast(3);
         ll.addFirst(0);
+        System.out.println(ll.size());
         System.out.println(ll);
 
         //remove
