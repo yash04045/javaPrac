@@ -48,11 +48,40 @@ public class DoublyLinkedList {
         size--;
     }
 
+    public static void addLast(int data){
+        Node newNode = new Node(data);
+        size++;
+        if(head == null){
+            head = tail = newNode;
+            return;
+        }
+        tail.next = newNode;
+        newNode.prev = tail;
+        tail = newNode;
+    }
+
+    public static void removeLast(){
+        if(size == 0){
+            System.out.println("Nothing to print");
+            return;
+        }else if (size == 1){
+            head = tail = null;
+            size= 0;
+            return;
+        }
+        tail = tail.prev;
+        tail.next = null;
+        size--;
+    }
+
     public static void main(String[] args){
         DoublyLinkedList Dll = new DoublyLinkedList();
         Dll.addFirst(1);
         Dll.addFirst(2);
         Dll.addFirst(3);
+        Dll.addLast(0);
+        printLL();
+        removeLast();
         printLL();
         removeFirst();
         printLL();
