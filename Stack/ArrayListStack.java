@@ -15,6 +15,9 @@ public class ArrayListStack {
 
         //pop
         public static int pop(){
+            if(isEmpty()){
+                return -1;
+            }
             int top = list.get(list.size() - 1);
             list.remove(list.size()-1);
             return top;
@@ -22,6 +25,9 @@ public class ArrayListStack {
 
         //peek
         public static int peek(){
+            if(isEmpty()){
+                return -1;
+            }
             return list.get(list.size() - 1);
         }
 
