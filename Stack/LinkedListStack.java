@@ -1,3 +1,4 @@
+import java.util.*;
 public class LinkedListStack {
     
     static class Node{
@@ -47,6 +48,7 @@ public class LinkedListStack {
     }
 
     public static void main(String args[]){
+        // Stack<Integer> s = new Stack<>();   // this particular code can be used instead of writing so many line of code above. This is a Java COllection Framework.
         StackA s = new StackA();
         s.push(1);
         s.push(2);
