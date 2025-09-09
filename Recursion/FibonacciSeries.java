@@ -11,6 +11,6 @@ public class FibonacciSeries {
         return Fibonacci;
     }
     public static void main(String args[]){
-        System.out.println(calcFibo(5));
+        System.out.println(calcFibo(10));
     }
 }

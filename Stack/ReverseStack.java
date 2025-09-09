@@ -17,7 +17,7 @@ public class ReverseStack {
         return sb.toString();
     }
     public static void main(String args[]){
-        String str = "abc";
+        String str = "Hello World";
         System.out.println(reverseStack(str));
     }
 }

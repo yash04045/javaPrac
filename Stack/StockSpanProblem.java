@@ -1,5 +1,5 @@
 import java.util.*;
-public class StockspanProblem {
+public class StockSpanProblem {
         public static void stockSpan(int stock[], int span[]){
         Stack<Integer> s = new Stack<>();
         span[0] = 1;
